@@ -1,0 +1,13 @@
+.form-grid {
+    display: grid;
+}
+.create-post {
+    border-style:ridge;
+    border-radius: 1em;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: wheat;
+}
+

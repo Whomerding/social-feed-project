@@ -15,7 +15,7 @@ const Dislike = (props) => {
     }
     return (
         <div>
-            <button className={buttonClassDislike} onClick={handleClick} style={{align:"right"}}>Dislike</button>
+            <button className={buttonClassDislike} onClick={handleClick} style={{float:"right"}}>Dislike</button>
         </div>
     )
 }

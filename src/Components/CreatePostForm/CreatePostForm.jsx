@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import "./CreatePostForm.css"
 import Stack from 'react-bootstrap/Stack';
-
+import "./CreatePostForm.css"
 const CreatePostForm=(props) => {
     const [name, setName] = useState('');
     const [post, setPost] = useState ('');
@@ -20,11 +19,11 @@ const CreatePostForm=(props) => {
         <div className="create-post">
             <form onSubmit={handleSubmit} className='form-grid'>
                 <Stack gap={2} className="col-md-5 mx-auto">
-                <div className = 'form-group'>
+                <div className = 'form-group-row'>
                 <label>Name</label>
-                <input type="string" className="form-control" value = {name} onChange={(event) => setName(event.target.value)}/>
+                <input style = {{display:"inline"}} type="string" className="form-control" value = {name} onChange={(event) => setName(event.target.value)}/>
                 </div>
-                <div className = 'form-group'>
+                <div className = 'form-group-row'>
                 <label>Post</label>
                 <input type="string" className="form-control" value = {post} onChange={(event) => setPost(event.target.value)}/>
                 </div>

@@ -3,7 +3,13 @@
 }
 .create-post {
     border-style:ridge;
-    border-radius: 1em;
-    margin-left: 25%;
-    margin-right: 25%;
+    border-radius: 2em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: white;
+}
+.form-group-row {
+    padding: .5rem;
 }

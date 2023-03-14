@@ -14,7 +14,7 @@ const Like = (props) => {
     }
     return (
         <div>
-            <button className={buttonClass} onClick={handleClick}>Like</button>
+            <button className={buttonClass} onClick={handleClick}style={{float:"right"}}>Like</button>
         </div>
     )
 }
