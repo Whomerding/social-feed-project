@@ -3,8 +3,9 @@ import CreatePostForm from "./Components/CreatePostForm/CreatePostForm";
 import NavBar from "./Components/NavBar/NavBar";
 import Post from "./Components/Post/Post";
 
+
 function App() {
-  const [posts, setPosts] = useState([{name: 'wendy', post: 'Hello'}])
+  const [posts, setPosts] = useState([{}])
 
   function addNewPost(post){
     let tempPosts = [post, ...posts];
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div>
+      <NavBar/>
       <CreatePostForm addNewPost = {addNewPost}/>
       <Post parentPosts={posts}/>
     </div>
