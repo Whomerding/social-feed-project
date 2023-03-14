@@ -2,5 +2,8 @@
     display: grid;
 }
 .create-post {
-    border: solid;
+    border-style:ridge;
+    border-radius: 1em;
+    margin-left: 25%;
+    margin-right: 25%;
 }

@@ -2,14 +2,19 @@ import React, { useState } from 'react';
 import CreatePostForm from "./Components/CreatePostForm/CreatePostForm";
 import NavBar from "./Components/NavBar/NavBar";
 import Post from "./Components/Post/Post";
-import PostList from "./Components/PostList/PostList";
 
 function App() {
   const [posts, setPosts] = useState([{name: 'wendy', post: 'Hello'}])
+
+  function addNewPost(post){
+    let tempPosts = [post, ...posts];
+    setPosts(tempPosts);
+  }
+
   return (
-    <div> 
-      <CreatePostForm/>
-      <Post/>
+    <div>
+      <CreatePostForm addNewPost = {addNewPost}/>
+      <Post parentPosts={posts}/>
     </div>
   );
 }
